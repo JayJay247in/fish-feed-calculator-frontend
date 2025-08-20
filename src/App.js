@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import FeedCalculatorForm from './components/FeedCalculatorForm';
+import './App.css'; // Import the stylesheet
+
+// A simple theme for a professional look and feel
+const theme = createTheme({
+    palette: {
+        mode: 'light',
+        primary: {
+            main: '#00695c',
+        },
+        secondary: {
+            main: '#ffab40',
+        },
+    },
+});
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <ThemeProvider theme={theme}>
+            <CssBaseline />
+            <Container maxWidth="lg">
+                <Box sx={{ my: 4, textAlign: 'center' }}>
+                    <Typography variant="h3" component="h1" gutterBottom sx={{ fontWeight: 'bold' }}>
+                        Aquaculture Feed Calculator
+                    </Typography>
+                    <Typography variant="h6" color="text.secondary">
+                        Optimize your feed composition and cost with our advanced calculator.
+                    </Typography>
+                </Box>
+                <FeedCalculatorForm />
+            </Container>
+        </ThemeProvider>
+    );
 }
 
 export default App;
