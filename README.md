@@ -1,6 +1,6 @@
 # Fish Feed Calculator - Frontend
 
-This is the frontend for the Fish Feed Calculator, a modern, responsive user interface built with React. It provides an intuitive way for users to interact with the powerful features of the [Fish Feed Calculator Backend](https://github.com/your-repo/fish-feed-calculator).
+This is the frontend for the Fish Feed Calculator, a modern, responsive user interface built with React. It provides an intuitive way for users to interact with the powerful features of the [Fish Feed Calculator Backend](https://github.com/JayJay247in/fish-feed-calculator-backend.git).
 
 The application is designed to be user-friendly, providing clear inputs, formatted results, and real-time feedback.
 
@@ -28,7 +28,7 @@ The application is designed to be user-friendly, providing clear inputs, formatt
 
 **Prerequisites:**
 *   Node.js and npm
-*   The [Fish Feed Calculator Backend](https://github.com/your-repo/fish-feed-calculator) **must be running** on `http://localhost:8080`.
+*   The [Fish Feed Calculator Backend](https://github.com/JayJay247in/fish-feed-calculator-backend.git) **must be running** on `http://localhost:8080`.
 
 **Instructions:**
 1.  Navigate to the project's root directory (`fish-feed-calculator-frontend`).
